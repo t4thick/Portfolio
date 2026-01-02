@@ -23,19 +23,8 @@
   --border: rgba(100, 255, 218, 0.1);
 }
 
-/* Light mode (optional, can remove if you want dark only) */
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #ffffff;
-    --background-light: #f8f9fa;
-    --background-lighter: #e9ecef;
-    --foreground: #1f2937;
-    --foreground-dim: #6b7280;
-    --accent: #0ea5e9;
-    --accent-dark: #0284c7;
-    --border: rgba(14, 165, 233, 0.1);
-  }
-}
+/* Force dark mode - consistent across all devices */
+/* Removed light mode media query for consistent dark theme */
 
 /* ===============================
    BASE STYLES
