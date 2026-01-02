@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===============================
+   GLOBAL COLOR VARIABLES
+   =============================== */
+:root {
+  /* Dark Theme - Professional Navy */
+  --background: #0a192f;
+  --background-light: #112240;
+  --background-lighter: #233554;
+  
+  /* Text Colors */
+  --foreground: #ccd6f6;
+  --foreground-dim: #8892b0;
+  
+  /* Accent - Teal/Cyan */
+  --accent: #64ffda;
+  --accent-dark: #4fd1c5;
+  
+  /* Borders */
+  --border: rgba(100, 255, 218, 0.1);
+}
+
+/* Light mode (optional, can remove if you want dark only) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --background-light: #f8f9fa;
+    --background-lighter: #e9ecef;
+    --foreground: #1f2937;
+    --foreground-dim: #6b7280;
+    --accent: #0ea5e9;
+    --accent-dark: #0284c7;
+    --border: rgba(14, 165, 233, 0.1);
+  }
+}
+
+/* ===============================
+   BASE STYLES
+   =============================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===============================
+   SCROLLBAR STYLING
+   =============================== */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-light);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background-lighter);
+}
+
+/* ===============================
+   SELECTION STYLING
+   =============================== */
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+::-moz-selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+/* ===============================
+   CUSTOM UTILITIES
+   =============================== */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .link-underline {
+    position: relative;
+  }
+  
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+  }
+  
+  .link-underline:hover::after {
+    width: 100%;
+  }
+  
+  .card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
+  }
+}
+
+/* ===============================
+   GRADIENT BACKGROUNDS
+   =============================== */
+.gradient-accent {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
