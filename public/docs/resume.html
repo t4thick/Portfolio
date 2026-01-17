@@ -4,25 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Richard Effah Yeboah - Resume</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Inter', sans-serif;
-      font-size: 9pt;
-      line-height: 1.35;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 11pt;
+      line-height: 1.4;
       color: #000;
       background: white;
       max-width: 8.5in;
       margin: 0 auto;
-      padding: 0.35in;
+      padding: 0.5in;
     }
 
     @media print {
-      body { padding: 0.3in; font-size: 8.5pt; }
+      body { padding: 0.4in; font-size: 10pt; }
       .no-print { display: none; }
       @page { margin: 0; size: letter; }
     }
@@ -30,25 +27,22 @@
     /* Header */
     .header {
       text-align: center;
-      margin-bottom: 8px;
-      padding-bottom: 5px;
-      border-bottom: 2px solid #000;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
     }
 
     .name {
-      font-size: 19pt;
-      font-weight: 700;
-      margin-bottom: 2px;
+      font-size: 20pt;
+      font-weight: bold;
+      margin-bottom: 4px;
       color: #000;
+      letter-spacing: 0.5px;
     }
 
     .contact {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 8px;
-      font-size: 8.5pt;
-      color: #333;
+      font-size: 10pt;
+      color: #000;
+      line-height: 1.6;
     }
 
     .contact a {
@@ -62,17 +56,17 @@
 
     /* Sections */
     .section {
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
 
     .section-title {
-      font-size: 9.5pt;
-      font-weight: 700;
+      font-size: 12pt;
+      font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 3px;
+      margin-bottom: 6px;
+      margin-top: 8px;
+      border-bottom: 1px solid #000;
       padding-bottom: 2px;
-      border-bottom: 1.5px solid #000;
     }
 
     /* Education */
@@ -80,114 +74,102 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
 
     .edu-school {
-      font-weight: 600;
-      font-size: 9pt;
+      font-weight: bold;
+      font-size: 11pt;
     }
 
     .edu-date {
-      font-size: 8.5pt;
-      color: #333;
+      font-size: 10pt;
+      color: #000;
     }
 
     .edu-details {
-      font-size: 8.5pt;
-      color: #333;
-      margin-bottom: 1px;
-      line-height: 1.3;
+      font-size: 10pt;
+      color: #000;
+      margin-bottom: 2px;
+      line-height: 1.4;
     }
 
     .edu-degree {
-      font-size: 9pt;
-      margin-bottom: 1px;
+      font-size: 11pt;
+      margin-bottom: 2px;
+      font-weight: normal;
     }
 
     .coursework {
-      font-size: 8.5pt;
-      color: #333;
+      font-size: 10pt;
+      color: #000;
       margin-top: 3px;
+      line-height: 1.4;
     }
 
     /* Certifications under Education */
     .edu-certs {
-      margin-top: 4px;
-      padding-top: 4px;
-      border-top: 1px solid #e5e5e5;
-    }
-
-    .edu-certs-title {
-      font-size: 9pt;
-      font-weight: 600;
-      margin-bottom: 1px;
-      color: #000;
+      margin-top: 6px;
+      padding-top: 0;
     }
 
     .certs {
-      font-size: 8.5pt;
+      font-size: 10pt;
       line-height: 1.4;
-      color: #333;
-    }
-
-    .certs a {
       color: #000;
-      text-decoration: none;
-    }
-
-    .certs a:hover {
-      text-decoration: underline;
     }
 
     /* Skills */
     .skills-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4px 20px;
+      gap: 3px 30px;
+      margin-bottom: 4px;
     }
 
     .skills-row {
-      font-size: 8.5pt;
-      line-height: 1.3;
+      font-size: 10pt;
+      line-height: 1.5;
     }
 
     .skills-row strong {
-      font-weight: 600;
-      color: #000;
+      font-weight: bold;
     }
 
     /* Experience & Projects */
     .exp-item {
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .exp-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 1px;
+      margin-bottom: 2px;
     }
 
     .exp-title {
-      font-weight: 600;
-      font-size: 9pt;
+      font-weight: bold;
+      font-size: 11pt;
     }
 
     .exp-date {
-      font-size: 8.5pt;
-      color: #333;
+      font-size: 10pt;
+      color: #000;
+      font-style: italic;
     }
 
     .exp-company {
-      font-size: 8.5pt;
-      color: #333;
-      margin-bottom: 1px;
+      font-size: 10pt;
+      color: #000;
+      margin-bottom: 3px;
+      font-style: italic;
     }
 
     .exp-company a {
       color: #000;
       text-decoration: none;
+      font-style: italic;
     }
 
     .exp-company a:hover {
@@ -197,57 +179,52 @@
     .exp-bullets {
       list-style: none;
       padding-left: 0;
-      margin-top: 1px;
+      margin-top: 2px;
     }
 
     .exp-bullets li {
       position: relative;
-      padding-left: 10px;
-      margin-bottom: 0px;
-      font-size: 8.5pt;
-      line-height: 1.3;
+      padding-left: 20px;
+      margin-bottom: 2px;
+      font-size: 10pt;
+      line-height: 1.4;
+      text-align: justify;
     }
 
     .exp-bullets li::before {
       content: "•";
       position: absolute;
-      left: 0;
+      left: 8px;
       color: #000;
       font-weight: bold;
     }
 
     /* Projects */
-    .project-links {
-      font-size: 8pt;
-      color: #333;
-      margin-bottom: 1px;
+    .project-tech {
+      font-size: 9pt;
+      color: #000;
+      font-style: italic;
+      margin-bottom: 3px;
     }
 
-    .project-links a {
+    .project-tech a {
       color: #000;
       text-decoration: none;
     }
 
-    .project-links a:hover {
+    .project-tech a:hover {
       text-decoration: underline;
-    }
-
-    .project-tech {
-      font-size: 8pt;
-      color: #333;
-      font-style: italic;
-      margin-bottom: 1px;
     }
 
     /* Organizations */
     .orgs {
-      font-size: 8.5pt;
-      line-height: 1.4;
-      color: #333;
+      font-size: 10pt;
+      line-height: 1.5;
+      color: #000;
     }
 
     .highlight {
-      font-weight: 600;
+      font-weight: bold;
     }
 
     /* Download Button */
@@ -260,7 +237,7 @@
       border: none;
       padding: 12px 24px;
       border-radius: 4px;
-      font-weight: 600;
+      font-weight: bold;
       cursor: pointer;
       font-size: 11pt;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -304,11 +281,7 @@
   <header class="header">
     <h1 class="name">Richard Effah Yeboah</h1>
     <div class="contact">
-      <span>(614) 290-4260</span>
-      <span><a href="mailto:kkras5050@gmail.com">kkras5050@gmail.com</a></span>
-      <span><a href="https://github.com/t4thick" target="_blank">GitHub</a></span>
-      <span><a href="https://linkedin.com/in/richard-effah-yeboah-621851254" target="_blank">LinkedIn</a></span>
-      <span><a href="https://richardeffahyeboah.vercel.app" target="_blank">Portfolio</a></span>
+      (614) 290-4260 | <a href="mailto:kkras5050@gmail.com">kkras5050@gmail.com</a> | <a href="https://github.com/t4thick" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/richard-effah-yeboah-621851254" target="_blank">LinkedIn</a> | <a href="https://richardeffahyeboah.vercel.app" target="_blank">Portfolio</a>
     </div>
   </header>
 
@@ -320,20 +293,13 @@
       <span class="edu-date">Expected May 2028</span>
     </div>
     <p class="edu-degree">Bachelor of Science in Computer Science</p>
-    <p class="edu-details">Grambling, LA • GPA: 4.0/4.0</p>
+    <p class="edu-details">Grambling, LA • Sophomore • GPA: 4.0/4.0</p>
     <p class="edu-details"><strong>Honors:</strong> President's List, CodePath & IBM Alumnus</p>
     <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Software Engineering, Web Development, Database Systems, Computer Science I & II, Foundation of Cybersecurity, Calculus I, Precalculus I</p>
     
     <!-- Certifications nested under Education -->
     <div class="edu-certs">
-      <p class="edu-certs-title">Certifications:</p>
-      <p class="certs">
-        <a href="https://www.credly.com/users/richard-effah-yeboah" target="_blank">CodePath Web Development</a> • 
-        <a href="https://www.credly.com/earner/earned/badge/67221f5e-492e-47e8-8672-5fd7eeff77fe" target="_blank">IBM Getting Started with Artificial Intelligence</a> • 
-        <a href="https://www.credly.com/earner/earned/badge/09ad4e50-da05-43a2-9713-a80726237cef" target="_blank">IBM Getting Started with Cybersecurity</a> • 
-        <a href="https://www.credly.com/earner/earned/badge/8611f26f-4a15-4fb8-87a5-a36106455163" target="_blank">IBM Getting Started with Data</a> • 
-        IBM Enterprise Design Thinking
-      </p>
+      <p class="certs"><strong>Certifications:</strong> CodePath Web Development • IBM Getting Started with AI • IBM Getting Started with Cybersecurity • IBM Getting Started with Data • IBM Enterprise Design Thinking</p>
     </div>
   </section>
 
@@ -360,7 +326,7 @@
       <p class="exp-company"><a href="https://lovelyqueenmart.com/" target="_blank">Lovely Queen Mart</a> | Remote</p>
       <ul class="exp-bullets">
         <li>Architected WooCommerce platform managing <span class="highlight">100+ SKUs</span> for African products, integrating secure payments and automated fulfillment systems</li>
-        <li>Optimized UX and delivery logistics, driving <span class="highlight">20% customer retention improvement</span> and increased platform engagement</li>
+        <li>Optimized UX and delivery workflows, improving customer retention by <span class="highlight">20%</span> and boosting platform engagement</li>
       </ul>
     </div>
 
@@ -398,15 +364,10 @@
         <span class="exp-title">Item7 Food Truck Ordering System</span>
         <span class="exp-date">Jan 2025 – Apr 2025</span>
       </div>
-      <p class="project-links">
-        Full-Stack Web Application | 
-        <a href="https://foodtruckk.vercel.app" target="_blank">Live Demo</a> | 
-        <a href="https://github.com/t4thick/project-foodtruck" target="_blank">GitHub</a>
-      </p>
-      <p class="project-tech">Python, Flask, PostgreSQL, SQLAlchemy, RESTful API, Vercel Serverless, Redis Caching</p>
+      <p class="project-tech">Python, Flask, PostgreSQL, SQLAlchemy, RESTful API, Vercel Serverless, Redis Caching | <a href="https://foodtruckk.vercel.app" target="_blank">Live Demo</a> | <a href="https://github.com/t4thick/project-foodtruck" target="_blank">GitHub</a></p>
       <ul class="exp-bullets">
-        <li>Engineered full-stack web application using Flask/Python/SQLAlchemy with MVC architecture, featuring <span class="highlight">50+ menu items</span>, dynamic cart, and Stripe payment processing</li>
-        <li>Built staff portal with <span class="highlight">RBAC (4 roles)</span>, enabling real-time order management, employee scheduling, shift tracking, and automated financial reporting</li>
+        <li>Built full-stack web app with <span class="highlight">50+ menu items</span> and real-time cart using Flask, Python, and SQLAlchemy with MVC architecture</li>
+        <li>Implemented Stripe payments and role-based staff portal (<span class="highlight">4 roles</span>), enabling real-time order management and automated reporting</li>
       </ul>
     </div>
 
@@ -415,13 +376,10 @@
         <span class="exp-title">DevCanvas — Personal Portfolio</span>
         <span class="exp-date">Side Project</span>
       </div>
-      <p class="project-links">
-        <a href="https://richardeffahyeboah.vercel.app" target="_blank">Live Site</a>
-      </p>
-      <p class="project-tech">Next.js, TypeScript, Tailwind CSS, Framer Motion, Responsive Design</p>
+      <p class="project-tech">Next.js, TypeScript, Tailwind CSS, Framer Motion, Responsive Design | <a href="https://github.com/t4thick/Portfolio" target="_blank">GitHub</a></p>
       <ul class="exp-bullets">
-        <li>Developed modern, responsive portfolio with glassmorphism UI, magnetic hover effects, and skeleton loading states, optimized for performance and SEO</li>
-        <li>Showcases projects and technical skills with dynamic animations, demonstrating proficiency in modern frontend development practices</li>
+        <li>Built modern responsive portfolio using Next.js and Tailwind with glassmorphism UI and hover animations</li>
+        <li>Optimized performance and SEO, demonstrating proficiency in modern frontend development practices</li>
       </ul>
     </div>
 
@@ -432,7 +390,7 @@
       </div>
       <p class="project-tech">IBM SkillsBuild | Virtual | IBM Scholar - Data Science Track</p>
       <ul class="exp-bullets">
-        <li>Mastered data science workflows using Python, Jupyter Notebook and Watson Studio, executing end-to-end data pipeline from exploration to visualization</li>
+        <li>Mastered data science workflows using Python, Jupyter Notebook, and Watson Studio, executing end-to-end data pipeline from exploration to visualization</li>
         <li>Implemented data wrangling techniques and statistical analysis across multiple real-world datasets</li>
       </ul>
     </div>
