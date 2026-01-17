@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===============================
+   GLOBAL COLOR VARIABLES
+   =============================== */
+:root {
+  /* Luxury Tech Theme - Rich Black & Electric Cyan */
+  --background: #020617;
+  --background-light: #0f172a;
+  --background-lighter: #1e293b;
+  
+  /* Text Colors */
+  --foreground: #f8fafc;
+  --foreground-dim: #94a3b8;
+  
+  /* Accent - Electric Cyan & Indigo */
+  --accent: #22d3ee;
+  --accent-dark: #0891b2;
+  --accent-glow: rgba(34, 211, 238, 0.3);
+  --accent-gradient: linear-gradient(135deg, #22d3ee 0%, #6366f1 100%);
+  
+  /* Borders */
+  --border: rgba(34, 211, 238, 0.1);
+  --glass-bg: rgba(15, 23, 42, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.05);
+}
+
+/* Force dark mode - consistent across all devices */
+/* Removed light mode media query for consistent dark theme */
+
+/* ===============================
+   BASE STYLES
+   =============================== */
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Smooth scroll with offset for fixed sidebar */
+html {
+  scroll-padding-top: 2rem;
+}
+
+/* Luxury Utilities */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.shadow-pro {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 25px var(--accent-glow);
+}
+
+.gradient-text {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: var(--accent-gradient);
+}
+
+/* Custom Cursor/Spotlight Effect Helper */
+.spotlight-area {
+  position: relative;
+}
+
+.spotlight-area::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(34, 211, 238, 0.06),
+    transparent 40%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Shimmer Animation for Skeleton Loading */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+/* ===============================
+   SCROLLBAR STYLING
+   =============================== */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-light);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background-lighter);
+}
+
+/* ===============================
+   SELECTION STYLING
+   =============================== */
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+::-moz-selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+/* ===============================
+   CUSTOM UTILITIES
+   =============================== */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .link-underline {
+    position: relative;
+  }
+  
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+  }
+  
+  .link-underline:hover::after {
+    width: 100%;
+  }
+  
+  .card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(100, 255, 218, 0.15);
+  }
+
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+  }
+
+  .glow-effect:hover {
+    box-shadow: 0 0 30px rgba(100, 255, 218, 0.5);
+  }
+}
+
+/* ===============================
+   GRADIENT BACKGROUNDS
+   =============================== */
+.gradient-accent {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
