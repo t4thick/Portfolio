@@ -28,6 +28,17 @@ export default function Projects() {
       impact: "Solo-built production system demonstrating enterprise-ready skills: designed normalized database schema for 50+ menu items, implemented RBAC with 4 user roles (customer/staff/admin/manager), integrated Stripe payments with PCI-compliant security, and deployed serverless on Vercel with Redis caching achieving <2s cold starts. Handles concurrent sessions, real-time order tracking, and automated reporting—proving ability to architect scalable systems, write secure production code, and deploy cloud-native applications ready for enterprise teams.",
       image: "/images/item7-foodtruck-preview.jpg",
       imageAlt: "Item7 Food Truck Management System - Checkout and Dashboard Interface"
+    },
+    {
+      title: "DevCanvas — Personal Portfolio",
+      description: "A modern portfolio website showcasing my work, skills, and resume. Built with Next.js and TypeScript, featuring smooth animations, responsive design, and an interactive resume viewer with download functionality.",
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Next.js App Router", "Responsive Design", "Git", "Vercel"],
+      link: "https://richardeffahyeboah.vercel.app",
+      github: "https://github.com/t4thick/Portfolio",
+      role: "Frontend Developer - Solo Builder",
+      impact: "Built this portfolio to showcase technical skills and projects—demonstrates proficiency in React/Next.js, TypeScript, modern CSS with Tailwind, and advanced animations using Framer Motion. Implemented responsive design patterns, performance optimizations, and clean component architecture. Shows ability to create professional, production-ready frontend applications and deploy to cloud platforms like Vercel.",
+      image: "/images/portfolio-preview.jpg",
+      imageAlt: "DevCanvas Personal Portfolio Website"
     }
   ];
 
