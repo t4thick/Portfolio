@@ -8,7 +8,7 @@ export default function Sidebar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const sections = ['hero', 'about', 'experience', 'projects', 'skills', 'education', 'blog', 'contact'];
+    const sections = ['hero', 'about', 'experience', 'projects', 'skills', 'education', 'blog', 'research', 'contact'];
     const observers: IntersectionObserver[] = [];
 
     sections.forEach((section) => {
@@ -43,7 +43,8 @@ export default function Sidebar() {
     { id: 'skills', label: 'Skills', number: '04.' },
     { id: 'education', label: 'Education', number: '05.' },
     { id: 'blog', label: 'Blog', number: '06.' },
-    { id: 'contact', label: 'Contact', number: '07.' },
+    { id: 'research', label: 'Research', number: '07.' },
+    { id: 'contact', label: 'Contact', number: '08.' },
   ];
 
   const handleNavClick = () => {

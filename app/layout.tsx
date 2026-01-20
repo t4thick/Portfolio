@@ -8,8 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Richard Effah Yeboah | Software Developer",
-  description: "Portfolio of Richard Effah Yeboah - Computer Science student and Software Developer specializing in full-stack web development, building modern applications with React, Next.js, Python, and Flask.",
+  title: "Richard Effah Yeboah | Computer Science Student & Software Developer | Seeking Summer 2026 Research",
+  description: "Richard Effah Yeboah - Computer Science student (4.0 GPA) at Grambling State University seeking Summer 2026 undergraduate research opportunities in quantum information science, algorithms, machine learning, and computer science. Full-stack developer with experience in React, Next.js, Python, Flask, and PostgreSQL. Available for research positions.",
+  keywords: "undergraduate research, summer research 2026, quantum computing research, computer science student, research assistant, algorithms research, machine learning research, quantum information science, computer science research opportunities, international student research",
 };
 
 export default function RootLayout({

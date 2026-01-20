@@ -1,0 +1,24 @@
+Personal Statement - Undergraduate Research Experience in Quantum Information Science
+University of South Carolina at Columbia
+Summer 2026
+
+---
+
+My journey into computer science began with building full-stack applications like the Item7 Food Truck Management System—a production-ready platform handling complex data relationships, role-based access control, and real-time processing using Flask, PostgreSQL, and Redis. While developing this system, I discovered that the most fascinating challenges in computing lie not just in managing data efficiently, but in fundamentally reimagining how computation itself works. This realization drew me toward quantum information science, where the intersection of quantum mechanics and computer science promises to solve problems that are intractable for classical systems.
+
+As a Computer Science sophomore at Grambling State University with a 4.0 GPA, I've built a strong foundation in algorithms, data structures, and software engineering. Through courses like Data Structures and Algorithms, I've learned to analyze computational complexity and design efficient solutions. My work on distributed systems and database architectures has given me hands-on experience with state management, concurrency, and system reliability—concepts that parallel the challenges in quantum computing, where coherence, entanglement, and error correction are paramount.
+
+My experience with data science workflows during the IBM Data Science Bootcamp, where I processed real-world datasets using Python and statistical analysis, has sharpened my ability to think critically about information representation and transformation. In quantum information science, data is encoded in quantum states, and I'm eager to explore how quantum algorithms can exponentially accelerate data processing and optimization tasks. The mathematical rigor required for my coursework in Calculus and my exploration of advanced data structures directly translates to understanding quantum gates, unitary transformations, and the linear algebra underlying quantum computation.
+
+My practical experience architecting scalable systems demonstrates my ability to work with complex, interdependent components—a skill essential for quantum systems where qubits must be carefully isolated, controlled, and measured. Through the Item7 project, I implemented secure authentication and session management, which parallels the need for quantum error correction and decoherence mitigation in quantum computing. Additionally, my coursework in Foundation of Cybersecurity introduced me to cryptographic principles, sparking my interest in quantum cryptography and post-quantum security protocols.
+
+What excites me most about quantum information science is its potential to revolutionize fields from cryptography to machine learning, optimization, and molecular simulation. I want to contribute to research that advances our understanding of quantum algorithms and their practical applications. The opportunity to work alongside faculty at the University of South Carolina at Columbia would provide me with hands-on experience in quantum circuit design, quantum error correction, or quantum algorithm development—areas where I can apply my computational thinking and programming skills to tackle novel research questions.
+
+I am particularly drawn to the interdisciplinary nature of quantum information science, combining theoretical physics, mathematics, and computer science. My background in full-stack development has taught me to bridge different domains—frontend and backend, design and functionality, theory and implementation. I believe this holistic approach will be valuable in quantum research, where translating theoretical quantum principles into working quantum circuits or algorithms requires both deep understanding and practical problem-solving.
+
+This research experience would be transformative for my academic and professional trajectory. It would allow me to explore cutting-edge research questions while contributing to the field's advancement. I am eager to bring my strong work ethic, attention to detail, and passion for solving complex problems to your research team, and I am committed to fully engaging with the research, learning from mentors, and contributing meaningfully to ongoing projects.
+
+---
+
+Word count: Approximately 498 words
+Character count: Approximately 2,847 characters (without spaces: ~2,349)

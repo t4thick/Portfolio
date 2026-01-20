@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Blog from "./components/Blog";
+import Research from "./components/Research";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Skills />
       <Education />
       <Blog />
+      <Research />
       <Contact />
       <Footer />
     </div>

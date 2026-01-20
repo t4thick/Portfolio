@@ -59,8 +59,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.6 }}
           >
-            I'm a <span className="text-[var(--accent)] font-semibold">software developer</span> who builds web applications. 
-            Currently working on full-stack projects using modern technologies.
+            I'm a <span className="text-[var(--accent)] font-semibold">Computer Science student</span> and software developer 
+            building full-stack applications. <span className="text-[var(--accent)] font-semibold">Seeking Summer 2026 research opportunities</span> 
+            in quantum computing, algorithms, and related fields.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -90,12 +91,12 @@ export default function Hero() {
               Resume
             </motion.a>
             <motion.a
-              href="#projects"
+              href="#research"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-block px-8 py-4 bg-[var(--accent)]/10 text-[var(--foreground)] border-2 border-[var(--accent)]/40 rounded font-mono text-sm font-medium hover:bg-[var(--accent)]/20 hover:border-[var(--accent)] transition-all duration-300 hover:shadow-[0_0_20px_rgba(100,255,218,0.3)]"
             >
-              View My Work
+              Research Opportunities
             </motion.a>
           </motion.div>
 

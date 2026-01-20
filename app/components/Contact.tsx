@@ -15,7 +15,7 @@ export default function Contact() {
         
         {/* Section Number */}
           <p className="text-[var(--accent)] font-mono text-sm md:text-base mb-4">
-          08. What's Next?
+          09. What's Next?
         </p>
 
         {/* Heading */}
@@ -25,7 +25,8 @@ export default function Contact() {
 
         {/* Description */}
         <p className="text-lg md:text-xl text-[var(--foreground-dim)] mb-12 max-w-xl mx-auto leading-relaxed">
-          I'm open to new opportunities and collaborations. Feel free to reach out if you'd like to connect.
+          I'm open to new opportunities, collaborations, and <span className="text-[var(--accent)] font-semibold">Summer 2026 research positions</span>. 
+          Feel free to reach out if you'd like to connect or discuss research opportunities.
         </p>
 
         {/* CTA Button */}

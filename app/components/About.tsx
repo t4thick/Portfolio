@@ -41,7 +41,9 @@ export default function About() {
               >
                 Grambling State University
               </a>
-              . Currently learning software engineering, data structures, and full-stack development.
+              {" "}with a 4.0 GPA, currently learning software engineering, data structures, and full-stack development. 
+              I'm actively seeking <span className="text-[var(--accent)] font-semibold">Summer 2026 undergraduate research opportunities</span> 
+              in quantum information science, algorithms, machine learning, and related fields.
             </p>
             <p>
               I've worked on projects like{" "}
