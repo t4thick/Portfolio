@@ -8,12 +8,55 @@ export default function Experience() {
   
   const experiences: Array<{
     company: string;
+    companyUrl?: string;
     title: string;
     dates: string;
+    location: string;
     description: string;
     achievements: string[];
     techStack: string[];
-  }> = [];
+  }> = [
+    {
+      company: "Lovely Queen Mart",
+      companyUrl: "https://lovelyqueenmart.com",
+      title: "E-Commerce Developer",
+      dates: "Jan 2025 - Present",
+      location: "Remote",
+      description: "Building and maintaining a WooCommerce-based e-commerce platform for authentic African products.",
+      achievements: [
+        "Architected WooCommerce platform managing 100+ SKUs for African products, integrating secure payment processing and automated fulfillment systems",
+        "Optimized user experience and delivery workflows, improving customer retention by 20% and boosting platform engagement metrics",
+        "Implemented responsive design and SEO best practices to increase organic traffic and conversions"
+      ],
+      techStack: ["WooCommerce", "WordPress", "PHP", "JavaScript", "CSS", "Stripe API", "SEO"]
+    },
+    {
+      company: "New Life International School",
+      title: "ICT Instructor & Data Administrator",
+      dates: "Jan 2024 - Dec 2024",
+      location: "Kronum, Kumasi, Ghana",
+      description: "Taught ICT fundamentals and managed school data systems.",
+      achievements: [
+        "Taught fundamental ICT concepts to students across multiple grade levels, fostering digital literacy and practical computer skills",
+        "Managed and maintained student records database using Excel, ensuring data accuracy and efficient organization",
+        "Developed teaching materials and hands-on exercises to improve student engagement and learning outcomes"
+      ],
+      techStack: ["Microsoft Excel", "Microsoft Office", "Data Management", "Teaching", "Curriculum Development"]
+    },
+    {
+      company: "God First Printing Press",
+      title: "Graphic Designer",
+      dates: "May 2024 - Nov 2024",
+      location: "Kumasi, Ghana (Part-Time)",
+      description: "Created marketing materials and brand designs for various clients.",
+      achievements: [
+        "Designed diverse marketing materials including flyers, banners, business cards, and logos using Adobe Photoshop",
+        "Collaborated with clients to translate their visions into compelling visual designs, enhancing brand presence",
+        "Delivered projects on tight deadlines while maintaining high quality standards"
+      ],
+      techStack: ["Adobe Photoshop", "Graphic Design", "Brand Identity", "Print Design", "Client Communication"]
+    }
+  ];
 
   return (
     <section id="experience" className="bg-[var(--background)] text-[var(--foreground)] py-20 md:py-32 px-6 md:px-12">
@@ -70,9 +113,14 @@ export default function Experience() {
               >
                 <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-1">
                   {exp.title}{" "}
-                  <span className="text-[var(--accent)]">@ {exp.company}</span>
+                  <span className="text-[var(--accent)]">@ {exp.companyUrl ? (
+                    <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      {exp.company}
+                    </a>
+                  ) : exp.company}</span>
                 </h3>
-                <p className="text-[var(--foreground-dim)] text-sm font-mono mb-6">{exp.dates}</p>
+                <p className="text-[var(--foreground-dim)] text-sm font-mono mb-1">{exp.dates}</p>
+                <p className="text-[var(--foreground-dim)] text-xs font-mono mb-6 opacity-70">{exp.location}</p>
                 
                 <ul className="space-y-3 mb-6">
                   {exp.achievements.map((achievement, i) => (
