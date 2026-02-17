@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in LaTeX (Jake's Template)
+% Converted for Richard Effah Yeboah
+% Original template: Jake Gutierrez (MIT)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% Optional: uncomment if you have glyphtounicode.tex in same folder
+% \input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Richard Effah Yeboah} \\ \vspace{1pt}
+    \small (614) 290-4260 $|$ \href{mailto:kkras5050@gmail.com}{\underline{kkras5050@gmail.com}} $|$
+    \href{https://github.com/t4thick}{\underline{github.com/t4thick}} $|$
+    \href{https://linkedin.com/in/richard-effah-yeboah-621851254}{\underline{linkedin.com/in/richard-effah-yeboah}} $|$
+    \href{https://richardeffahyeboah.vercel.app}{\underline{Portfolio}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Grambling State University}{Expected May 2028}
+      {B.S. Computer Science (Sophomore) $|$ GPA: 4.0/4.0}{}
+    \vspace{-4pt}
+    \small\textbf{Honors:} President's List; CodePath \& IBM Alumnus \\
+    \textbf{Relevant Coursework:} Data Structures, Algorithms, Software Engineering, Web Development, Database Systems, Foundations of Cybersecurity, Calculus I
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, TypeScript/JavaScript, SQL, HTML/CSS} \\
+     \textbf{Backend \& Databases}{: Flask, Node.js, REST APIs, SQLAlchemy, PostgreSQL, Redis (caching)} \\
+     \textbf{Frontend}{: React, Next.js} \\
+     \textbf{Tools}{: Git/GitHub, Vercel, Stripe API, Excel}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Item7 Food Truck Ordering System} $|$ \emph{Python, Flask, PostgreSQL, SQLAlchemy, REST API, Redis, Vercel Serverless, Stripe} $|$ \href{https://foodtruckk.vercel.app}{\underline{Live Demo}} $|$ \href{https://github.com/t4thick/project-foodtruck}{\underline{GitHub}}}{Jan 2025 -- Apr 2025}
+          \resumeItemListStart
+            \resumeItem{Engineered an ordering platform with a relational data model for \textbf{50+ menu items}, carts, and orders; implemented CRUD flows and server-side validation via RESTful endpoints}
+            \resumeItem{Built a role-based staff portal with \textbf{4 roles} to manage orders and operations; integrated Stripe checkout with robust error handling and order state consistency}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{DevCanvas (Portfolio Site)} $|$ \emph{Next.js, TypeScript, Tailwind CSS} $|$ \href{https://github.com/t4thick/Portfolio}{\underline{GitHub}}}{Side Project}
+          \resumeItemListStart
+            \resumeItem{Built and deployed a responsive portfolio with a component-driven architecture to present projects and experience in a recruiter-scannable format}
+            \resumeItem{Optimized page structure for SEO and fast navigation; kept content maintainable through reusable sections and consistent formatting}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {E-Commerce Developer}{Jan 2025 -- Present}
+      {\href{https://lovelyqueenmart.com/}{Lovely Queen Mart}}{Remote}
+      \resumeItemListStart
+        \resumeItem{Architected and launched an e-commerce platform managing \textbf{100+ SKUs}, integrating secure payments and operational workflows for fulfillment}
+        \resumeItem{Improved site UX and ordering flow, contributing to \textbf{$\sim$20\%} customer retention improvement and higher engagement}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ICT Instructor \& Data Administrator}{Jan 2024 -- Dec 2024}
+      {New Life International School}{Kronum, Kumasi, Ghana}
+      \resumeItemListStart
+        \resumeItem{Taught core ICT concepts and hands-on computing skills; created structured lessons to improve student proficiency}
+        \resumeItem{Managed and validated student records in Excel to improve accuracy and retrieval for administration workflows}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Graphic Designer}{May 2024 -- Nov 2024}
+      {God First Printing Press (Part-Time)}{Kumasi, Ghana}
+      \resumeItemListStart
+        \resumeItem{Produced marketing assets (flyers, banners, logos) in Adobe Photoshop; delivered consistent outputs under deadlines and client constraints}
+        \resumeItem{Translated client requirements into print-ready designs while maintaining brand consistency}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMS / CERTIFICATIONS-----------
+\section{Programs / Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Data Science Bootcamp}{May 2025 -- Jun 2025}
+      {IBM SkillsBuild $|$ IBM Scholar -- Data Science Track}{Virtual}
+      \resumeItemListStart
+        \resumeItem{Completed end-to-end data workflows in Python (exploration, cleaning, visualization) using Jupyter Notebook and Watson Studio}
+        \resumeItem{Applied data wrangling techniques and statistical analysis across multiple datasets to derive actionable insights}
+      \resumeItemListEnd
+    \vspace{2pt}
+    \small\textbf{Certifications:} CodePath Web Development $|$ IBM Getting Started with AI $|$ IBM Getting Started with Cybersecurity $|$ IBM Getting Started with Data $|$ IBM Enterprise Design Thinking
+  \resumeSubHeadingListEnd
+
+%-----------CLUBS \& ORGANIZATIONS-----------
+\section{Clubs \& Organizations}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{ColorStack $|$ Advocacy for Climate Change Education $|$ ISSUP $|$ SECURE+ $|$ African Student Association}}
+ \end{itemize}
+
+\end{document}
