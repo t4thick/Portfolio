@@ -8,329 +8,227 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 10.5pt;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11pt;
       line-height: 1.35;
       color: #000;
-      background: white;
+      background: #fff;
       max-width: 8.5in;
       margin: 0 auto;
-      padding: 0.35in;
+      padding: 0.5in 0.6in;
+      text-align: left;
     }
 
     a {
-      color: #0066cc;
-      text-decoration: none;
+      color: #000;
+      text-decoration: underline;
     }
 
     a:hover {
-      text-decoration: underline;
-      color: #004499;
+      color: #333;
     }
 
     @media print {
-      body { padding: 0.25in; font-size: 9.5pt; }
-      .no-print { display: none; }
-      @page { margin: 0; size: letter; }
+      body { padding: 0.4in; font-size: 10pt; }
+      .no-print { display: none !important; }
+      @page { margin: 0.5in; size: letter; }
     }
 
-    /* Header */
+    /* ----- Jake's-style header: centered name, single-line contact ----- */
     .header {
       text-align: center;
-      margin-bottom: 8px;
-      padding-bottom: 5px;
+      margin-bottom: 12px;
     }
 
     .name {
-      font-size: 20pt;
+      font-size: 22pt;
       font-weight: bold;
+      font-variant: small-caps;
+      letter-spacing: 0.02em;
       margin-bottom: 4px;
       color: #000;
-      letter-spacing: 0.5px;
     }
 
     .contact {
       font-size: 10pt;
       color: #000;
-      line-height: 1.6;
     }
 
     .contact a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    .contact a:hover {
+      color: #000;
       text-decoration: underline;
-      color: #004499;
     }
 
-    /* Sections */
+    /* ----- Jake's section: small-caps + rule ----- */
     .section {
-      margin-bottom: 5px;
+      margin-bottom: 2px;
     }
 
     .section-title {
-      font-size: 11.5pt;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 3px;
-      margin-top: 3px;
+      font-size: 11pt;
+      font-weight: 600;
+      font-variant: small-caps;
+      letter-spacing: 0.03em;
+      margin-top: 10px;
+      margin-bottom: 6px;
+      padding-bottom: 2px;
       border-bottom: 1px solid #000;
-      padding-bottom: 1px;
+      color: #000;
     }
 
-    /* Education */
-    .edu-header {
+    /* ----- Education: bold school left, date right; italic degree left ----- */
+    .edu-row {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 3px;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 2px;
     }
 
-    .edu-school {
-      font-weight: bold;
-      font-size: 11pt;
-    }
+    .edu-school { font-weight: bold; font-size: 11pt; }
+    .edu-date { font-size: 10pt; font-style: italic; }
+    .edu-degree { font-size: 10pt; font-style: italic; margin-bottom: 2px; }
+    .edu-extra { font-size: 9.5pt; margin-bottom: 1px; line-height: 1.3; }
 
-    .edu-date {
+    /* ----- Technical Skills: stacked bold labels (Jake's style) ----- */
+    .skills-block {
       font-size: 10pt;
-      color: #000;
+      line-height: 1.45;
     }
 
-    .edu-details {
-      font-size: 9.5pt;
-      color: #000;
-      margin-bottom: 1px;
-      line-height: 1.3;
+    .skills-block strong {
+      font-weight: 600;
     }
 
-    .edu-degree {
-      font-size: 10.5pt;
-      margin-bottom: 1px;
-      font-weight: normal;
-    }
-
-    .coursework {
-      font-size: 9.5pt;
-      color: #000;
-      margin-top: 2px;
-      line-height: 1.3;
-    }
-
-    /* Certifications under Education */
-    .edu-certs {
-      margin-top: 3px;
-      padding-top: 0;
-    }
-
-    .certs {
-      font-size: 9.5pt;
-      line-height: 1.3;
-      color: #000;
-    }
-
-    /* Skills */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3px 30px;
-      margin-bottom: 4px;
-    }
-
-    .skills-row {
-      font-size: 9.5pt;
-      line-height: 1.4;
-    }
-
-    .skills-row strong {
-      font-weight: bold;
-    }
-
-    /* Experience & Projects */
+    /* ----- Experience / Projects: two-line subheading ----- */
     .exp-item {
-      margin-bottom: 5px;
+      margin-bottom: 2px;
     }
 
-    .exp-header {
+    .exp-row {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 2px;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 1px;
     }
 
-    .exp-title {
-      font-weight: bold;
-      font-size: 11pt;
-    }
-
-    .exp-date {
-      font-size: 10pt;
-      color: #000;
-      font-style: italic;
-    }
-
-    .exp-company {
-      font-size: 9.5pt;
-      color: #000;
-      margin-bottom: 2px;
-      font-style: italic;
-    }
-
-    .exp-company a {
-      color: #0066cc;
-      text-decoration: none;
-      font-style: italic;
-    }
-
-    .exp-company a:hover {
-      text-decoration: underline;
-      color: #004499;
-    }
+    .exp-title { font-weight: bold; font-size: 10.5pt; }
+    .exp-date { font-size: 10pt; font-style: italic; }
+    .exp-sub { font-size: 9.5pt; font-style: italic; color: #000; margin-bottom: 3px; }
+    .exp-sub a { font-style: italic; }
 
     .exp-bullets {
       list-style: none;
-      padding-left: 0;
-      margin-top: 2px;
+      padding-left: 14px;
+      margin-top: 0;
+      margin-bottom: 4px;
     }
 
     .exp-bullets li {
       position: relative;
-      padding-left: 20px;
-      margin-bottom: 1px;
       font-size: 9.5pt;
-      line-height: 1.3;
-      text-align: justify;
+      line-height: 1.32;
+      margin-bottom: 1px;
     }
 
     .exp-bullets li::before {
       content: "•";
       position: absolute;
-      left: 8px;
-      color: #000;
+      left: -10px;
       font-weight: bold;
     }
 
-    /* Projects */
     .project-tech {
-      font-size: 8.5pt;
-      color: #000;
+      font-size: 9.5pt;
       font-style: italic;
       margin-bottom: 2px;
     }
 
-    .project-tech a {
-      color: #0066cc;
-      text-decoration: none;
-    }
+    .highlight { font-weight: bold; }
 
-    .project-tech a:hover {
-      text-decoration: underline;
-      color: #004499;
-    }
+    .certs { font-size: 9.5pt; line-height: 1.35; margin-top: 4px; }
+    .orgs { font-size: 9.5pt; line-height: 1.4; }
 
-    /* Organizations */
-    .orgs {
-      font-size: 9.5pt;
-      line-height: 1.4;
-      color: #000;
-    }
-
-    .highlight {
-      font-weight: bold;
-    }
-
-    /* Download Button */
+    /* ----- Download (no-print) ----- */
     .download-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
       background: #000;
-      color: white;
+      color: #fff;
       border: none;
-      padding: 12px 24px;
+      padding: 10px 18px;
       border-radius: 4px;
-      font-weight: bold;
+      font-size: 10pt;
+      font-weight: 600;
       cursor: pointer;
-      font-size: 11pt;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
       z-index: 1000;
     }
 
-    .download-btn:hover {
-      background: #333;
-    }
+    .download-btn:hover { background: #333; }
 
     .download-info {
       position: fixed;
-      top: 20px;
-      right: 20px;
-      background: rgba(0,0,0,0.9);
-      color: white;
-      padding: 12px 16px;
+      top: 16px;
+      right: 16px;
+      background: #111;
+      color: #fff;
+      padding: 10px 14px;
       border-radius: 6px;
-      font-size: 10pt;
+      font-size: 9.5pt;
       z-index: 1000;
-      max-width: 250px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      max-width: 240px;
     }
 
-    .download-info strong {
-      display: block;
-      margin-bottom: 4px;
-      font-size: 11pt;
-    }
+    .download-info a { color: #b3d7ff; }
+    .download-info strong { display: block; margin-bottom: 4px; font-size: 10pt; }
   </style>
 </head>
 <body>
 
-  <!-- Download Info (only shows on screen, not in print) -->
   <div class="download-info no-print">
-    <strong>Download Resume</strong>
-    <span>Print/save as PDF below, or <a href="/docs/resume-jakes-template.tex" download style="color:#fff; text-decoration:underline;">download LaTeX (Jake's template)</a></span>
+    <strong>Download</strong>
+    <span>Print to PDF, or <a href="/docs/resume-jakes-template.tex" download>get LaTeX source</a></span>
   </div>
 
-  <!-- Header -->
   <header class="header">
     <h1 class="name">Richard Effah Yeboah</h1>
     <div class="contact">
-      (614) 290-4260 | <a href="mailto:kkras5050@gmail.com">kkras5050@gmail.com</a> | <a href="https://github.com/t4thick" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/richard-effah-yeboah-621851254" target="_blank">LinkedIn</a> | <a href="https://richardeffahyeboah.vercel.app" target="_blank">Portfolio</a>
+      (614) 290-4260 | <a href="mailto:kkras5050@gmail.com">kkras5050@gmail.com</a> | <a href="https://github.com/t4thick" target="_blank" rel="noopener">github.com/t4thick</a> | <a href="https://linkedin.com/in/richard-effah-yeboah-621851254" target="_blank" rel="noopener">linkedin.com/in/richard-effah-yeboah</a> | <a href="https://richardeffahyeboah.vercel.app" target="_blank" rel="noopener">Portfolio</a>
     </div>
   </header>
 
-  <!-- Education -->
   <section class="section">
     <h2 class="section-title">Education</h2>
-    <div class="edu-header">
+    <div class="edu-row">
       <span class="edu-school">Grambling State University</span>
       <span class="edu-date">Expected May 2028</span>
     </div>
-    <p class="edu-degree"><strong>B.S. Computer Science</strong> (Sophomore) • <strong>GPA:</strong> 4.0/4.0</p>
-    <p class="edu-details"><strong>Honors:</strong> President's List; CodePath & IBM Alumnus</p>
-    <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Software Engineering, Web Development, Database Systems, Foundations of Cybersecurity, Calculus I</p>
+    <p class="edu-degree">B.S. Computer Science (Sophomore) | GPA: 4.0/4.0</p>
+    <p class="edu-extra"><strong>Honors:</strong> President's List; CodePath & IBM Alumnus</p>
+    <p class="edu-extra"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Software Engineering, Web Development, Database Systems, Foundations of Cybersecurity, Calculus I</p>
   </section>
 
-  <!-- Technical Skills -->
   <section class="section">
     <h2 class="section-title">Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skills-row"><strong>Languages:</strong> Python, TypeScript/JavaScript, SQL, HTML/CSS</div>
-      <div class="skills-row"><strong>Backend & Databases:</strong> Flask, Node.js, REST APIs, SQLAlchemy, PostgreSQL, Redis (caching concepts)</div>
-      <div class="skills-row"><strong>Frontend:</strong> React, Next.js</div>
-      <div class="skills-row"><strong>Tools:</strong> Git/GitHub, Vercel, Stripe API, Excel</div>
+    <div class="skills-block">
+      <strong>Languages:</strong> Python, TypeScript/JavaScript, SQL, HTML/CSS<br>
+      <strong>Backend &amp; Databases:</strong> Flask, Node.js, REST APIs, SQLAlchemy, PostgreSQL, Redis (caching)<br>
+      <strong>Frontend:</strong> React, Next.js<br>
+      <strong>Tools:</strong> Git/GitHub, Vercel, Stripe API, Excel
     </div>
   </section>
 
-  <!-- Projects (MOST IMPORTANT) -->
   <section class="section">
     <h2 class="section-title">Projects</h2>
-    
+
     <div class="exp-item">
-      <div class="exp-header">
+      <div class="exp-row">
         <span class="exp-title">Item7 Food Truck Ordering System</span>
         <span class="exp-date">Jan 2025 – Apr 2025</span>
       </div>
-      <p class="project-tech">Python, Flask, PostgreSQL, SQLAlchemy, REST API, Redis (caching), Vercel Serverless, Stripe | <a href="https://foodtruckk.vercel.app" target="_blank">Live Demo</a> | <a href="https://github.com/t4thick/project-foodtruck" target="_blank">GitHub</a></p>
+      <p class="project-tech">Python, Flask, PostgreSQL, SQLAlchemy, REST API, Redis, Vercel Serverless, Stripe | <a href="https://foodtruckk.vercel.app" target="_blank" rel="noopener">Live Demo</a> | <a href="https://github.com/t4thick/project-foodtruck" target="_blank" rel="noopener">GitHub</a></p>
       <ul class="exp-bullets">
         <li>Engineered an ordering platform with a relational data model for <span class="highlight">50+ menu items</span>, carts, and orders; implemented CRUD flows and server-side validation via RESTful endpoints</li>
         <li>Built a role-based staff portal with <span class="highlight">4 roles</span> to manage orders and operations; integrated Stripe checkout with robust error handling and order state consistency</li>
@@ -338,11 +236,11 @@
     </div>
 
     <div class="exp-item">
-      <div class="exp-header">
+      <div class="exp-row">
         <span class="exp-title">DevCanvas (Portfolio Site)</span>
         <span class="exp-date">Side Project</span>
       </div>
-      <p class="project-tech">Next.js, TypeScript, Tailwind CSS | <a href="https://github.com/t4thick/Portfolio" target="_blank">GitHub</a></p>
+      <p class="project-tech">Next.js, TypeScript, Tailwind CSS | <a href="https://github.com/t4thick/Portfolio" target="_blank" rel="noopener">GitHub</a></p>
       <ul class="exp-bullets">
         <li>Built and deployed a responsive portfolio with a component-driven architecture to present projects and experience in a recruiter-scannable format</li>
         <li>Optimized page structure for SEO and fast navigation; kept content maintainable through reusable sections and consistent formatting</li>
@@ -350,16 +248,15 @@
     </div>
   </section>
 
-  <!-- Work Experience -->
   <section class="section">
     <h2 class="section-title">Work Experience</h2>
-    
+
     <div class="exp-item">
-      <div class="exp-header">
+      <div class="exp-row">
         <span class="exp-title">E-Commerce Developer</span>
         <span class="exp-date">Jan 2025 – Present</span>
       </div>
-      <p class="exp-company"><a href="https://lovelyqueenmart.com/" target="_blank">Lovely Queen Mart</a> | Remote</p>
+      <p class="exp-sub"><a href="https://lovelyqueenmart.com/" target="_blank" rel="noopener">Lovely Queen Mart</a> | Remote</p>
       <ul class="exp-bullets">
         <li>Architected and launched an e-commerce platform managing <span class="highlight">100+ SKUs</span>, integrating secure payments and operational workflows for fulfillment</li>
         <li>Improved site UX and ordering flow, contributing to <span class="highlight">~20%</span> customer retention improvement and higher engagement</li>
@@ -367,11 +264,11 @@
     </div>
 
     <div class="exp-item">
-      <div class="exp-header">
+      <div class="exp-row">
         <span class="exp-title">ICT Instructor & Data Administrator</span>
         <span class="exp-date">Jan 2024 – Dec 2024</span>
       </div>
-      <p class="exp-company">New Life International School | Kronum, Kumasi, Ghana</p>
+      <p class="exp-sub">New Life International School | Kronum, Kumasi, Ghana</p>
       <ul class="exp-bullets">
         <li>Taught core ICT concepts and hands-on computing skills; created structured lessons to improve student proficiency</li>
         <li>Managed and validated student records in Excel to improve accuracy and retrieval for administration workflows</li>
@@ -379,11 +276,11 @@
     </div>
 
     <div class="exp-item">
-      <div class="exp-header">
+      <div class="exp-row">
         <span class="exp-title">Graphic Designer</span>
         <span class="exp-date">May 2024 – Nov 2024</span>
       </div>
-      <p class="exp-company">God First Printing Press | Kumasi, Ghana (Part-Time)</p>
+      <p class="exp-sub">God First Printing Press | Kumasi, Ghana (Part-Time)</p>
       <ul class="exp-bullets">
         <li>Produced marketing assets (flyers, banners, logos) in Adobe Photoshop; delivered consistent outputs under deadlines and client constraints</li>
         <li>Translated client requirements into print-ready designs while maintaining brand consistency</li>
@@ -391,34 +288,32 @@
     </div>
   </section>
 
-  <!-- Programs / Certifications -->
   <section class="section">
     <h2 class="section-title">Programs / Certifications</h2>
 
     <div class="exp-item">
-      <div class="exp-header">
+      <div class="exp-row">
         <span class="exp-title">Data Science Bootcamp</span>
         <span class="exp-date">May 2025 – Jun 2025</span>
       </div>
-      <p class="exp-company">IBM SkillsBuild | Virtual | IBM Scholar - Data Science Track</p>
+      <p class="exp-sub">IBM SkillsBuild | Virtual | IBM Scholar – Data Science Track</p>
       <ul class="exp-bullets">
         <li>Completed end-to-end data workflows in Python (exploration, cleaning, visualization) using Jupyter Notebook and Watson Studio</li>
         <li>Applied data wrangling techniques and statistical analysis across multiple datasets to derive actionable insights</li>
       </ul>
     </div>
 
-    <p class="certs"><strong>Certifications:</strong> CodePath Web Development • IBM Getting Started with AI • IBM Getting Started with Cybersecurity • IBM Getting Started with Data • IBM Enterprise Design Thinking</p>
+    <p class="certs"><strong>Certifications:</strong> CodePath Web Development | IBM Getting Started with AI | IBM Getting Started with Cybersecurity | IBM Getting Started with Data | IBM Enterprise Design Thinking</p>
   </section>
 
-  <!-- Organizations -->
   <section class="section">
     <h2 class="section-title">Clubs & Organizations</h2>
-    <p class="orgs">ColorStack • Advocacy for Climate Change Education • ISSUP • SECURE+ • African Student Association</p>
+    <p class="orgs">ColorStack | Advocacy for Climate Change Education | ISSUP | SECURE+ | African Student Association</p>
   </section>
 
   <div class="no-print" style="position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 1000;">
-    <button class="download-btn" onclick="window.print()" title="Click to print or save as PDF">Download PDF</button>
-    <a href="/docs/resume-jakes-template.tex" download class="download-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">LaTeX (Jake's)</a>
+    <button class="download-btn" onclick="window.print()" title="Print or save as PDF">Download PDF</button>
+    <a href="/docs/resume-jakes-template.tex" download class="download-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; color: #fff;">LaTeX source</a>
   </div>
 
 </body>
