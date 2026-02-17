@@ -67,15 +67,15 @@
 
     /* Sections */
     .section {
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .section-title {
       font-size: 11.5pt;
       font-weight: bold;
       text-transform: uppercase;
-      margin-bottom: 4px;
-      margin-top: 4px;
+      margin-bottom: 3px;
+      margin-top: 3px;
       border-bottom: 1px solid #000;
       padding-bottom: 1px;
     }
@@ -286,8 +286,8 @@
 
   <!-- Download Info (only shows on screen, not in print) -->
   <div class="download-info no-print">
-    <strong>📄 Download Resume</strong>
-    <span>Click the button below to save as PDF</span>
+    <strong>Download Resume</strong>
+    <span>Print/save as PDF below, or <a href="/docs/resume-jakes-template.tex" download style="color:#fff; text-decoration:underline;">download LaTeX (Jake's template)</a></span>
   </div>
 
   <!-- Header -->
@@ -298,32 +298,55 @@
     </div>
   </header>
 
-  <!-- Education (with Certifications nested inside) -->
+  <!-- Education -->
   <section class="section">
     <h2 class="section-title">Education</h2>
     <div class="edu-header">
       <span class="edu-school">Grambling State University</span>
       <span class="edu-date">Expected May 2028</span>
     </div>
-    <p class="edu-degree">Bachelor of Science in Computer Science</p>
-    <p class="edu-details">Grambling, LA • Sophomore • GPA: 4.0/4.0</p>
-    <p class="edu-details"><strong>Honors:</strong> President's List, CodePath & IBM Alumnus</p>
-    <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Software Engineering, Web Development, Database Systems, Computer Science I & II, Foundation of Cybersecurity, Calculus I, Precalculus I</p>
-    
-    <!-- Certifications nested under Education -->
-    <div class="edu-certs">
-      <p class="certs"><strong>Certifications:</strong> CodePath Web Development • IBM Getting Started with AI • IBM Getting Started with Cybersecurity • IBM Getting Started with Data • IBM Enterprise Design Thinking</p>
-    </div>
+    <p class="edu-degree"><strong>B.S. Computer Science</strong> (Sophomore) • <strong>GPA:</strong> 4.0/4.0</p>
+    <p class="edu-details"><strong>Honors:</strong> President's List; CodePath & IBM Alumnus</p>
+    <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Software Engineering, Web Development, Database Systems, Foundations of Cybersecurity, Calculus I</p>
   </section>
 
   <!-- Technical Skills -->
   <section class="section">
     <h2 class="section-title">Technical Skills</h2>
     <div class="skills-grid">
-      <div class="skills-row"><strong>Languages:</strong> Python, JavaScript, TypeScript, HTML/CSS, SQL</div>
-      <div class="skills-row"><strong>Frontend:</strong> React, Next.js, Tailwind CSS, Framer Motion</div>
-      <div class="skills-row"><strong>Backend:</strong> Flask, Node.js, SQLAlchemy, PostgreSQL, Redis</div>
-      <div class="skills-row"><strong>Tools:</strong> Git, Figma, Vercel, Stripe API, Excel, Photoshop</div>
+      <div class="skills-row"><strong>Languages:</strong> Python, TypeScript/JavaScript, SQL, HTML/CSS</div>
+      <div class="skills-row"><strong>Backend & Databases:</strong> Flask, Node.js, REST APIs, SQLAlchemy, PostgreSQL, Redis (caching concepts)</div>
+      <div class="skills-row"><strong>Frontend:</strong> React, Next.js</div>
+      <div class="skills-row"><strong>Tools:</strong> Git/GitHub, Vercel, Stripe API, Excel</div>
+    </div>
+  </section>
+
+  <!-- Projects (MOST IMPORTANT) -->
+  <section class="section">
+    <h2 class="section-title">Projects</h2>
+    
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-title">Item7 Food Truck Ordering System</span>
+        <span class="exp-date">Jan 2025 – Apr 2025</span>
+      </div>
+      <p class="project-tech">Python, Flask, PostgreSQL, SQLAlchemy, REST API, Redis (caching), Vercel Serverless, Stripe | <a href="https://foodtruckk.vercel.app" target="_blank">Live Demo</a> | <a href="https://github.com/t4thick/project-foodtruck" target="_blank">GitHub</a></p>
+      <ul class="exp-bullets">
+        <li>Engineered an ordering platform with a relational data model for <span class="highlight">50+ menu items</span>, carts, and orders; implemented CRUD flows and server-side validation via RESTful endpoints</li>
+        <li>Built a role-based staff portal with <span class="highlight">4 roles</span> to manage orders and operations; integrated Stripe checkout with robust error handling and order state consistency</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-title">DevCanvas (Portfolio Site)</span>
+        <span class="exp-date">Side Project</span>
+      </div>
+      <p class="project-tech">Next.js, TypeScript, Tailwind CSS | <a href="https://github.com/t4thick/Portfolio" target="_blank">GitHub</a></p>
+      <ul class="exp-bullets">
+        <li>Built and deployed a responsive portfolio with a component-driven architecture to present projects and experience in a recruiter-scannable format</li>
+        <li>Optimized page structure for SEO and fast navigation; kept content maintainable through reusable sections and consistent formatting</li>
+      </ul>
     </div>
   </section>
 
@@ -338,8 +361,8 @@
       </div>
       <p class="exp-company"><a href="https://lovelyqueenmart.com/" target="_blank">Lovely Queen Mart</a> | Remote</p>
       <ul class="exp-bullets">
-        <li>Architected WooCommerce platform managing <span class="highlight">100+ SKUs</span> for African products, integrating secure payments and automated fulfillment systems</li>
-        <li>Optimized UX and delivery workflows, improving customer retention by <span class="highlight">20%</span> and boosting platform engagement</li>
+        <li>Architected and launched an e-commerce platform managing <span class="highlight">100+ SKUs</span>, integrating secure payments and operational workflows for fulfillment</li>
+        <li>Improved site UX and ordering flow, contributing to <span class="highlight">~20%</span> customer retention improvement and higher engagement</li>
       </ul>
     </div>
 
@@ -350,8 +373,8 @@
       </div>
       <p class="exp-company">New Life International School | Kronum, Kumasi, Ghana</p>
       <ul class="exp-bullets">
-        <li>Taught fundamental ICT concepts to students, fostering digital literacy and practical computer skills</li>
-        <li>Managed student records using Excel, ensuring accuracy and efficient data organization</li>
+        <li>Taught core ICT concepts and hands-on computing skills; created structured lessons to improve student proficiency</li>
+        <li>Managed and validated student records in Excel to improve accuracy and retrieval for administration workflows</li>
       </ul>
     </div>
 
@@ -362,51 +385,29 @@
       </div>
       <p class="exp-company">God First Printing Press | Kumasi, Ghana (Part-Time)</p>
       <ul class="exp-bullets">
-        <li>Designed diverse marketing materials (flyers, banners, logos) using Adobe Photoshop for various clients</li>
-        <li>Collaborated with clients to translate visions into compelling visual designs, enhancing brand presence</li>
+        <li>Produced marketing assets (flyers, banners, logos) in Adobe Photoshop; delivered consistent outputs under deadlines and client constraints</li>
+        <li>Translated client requirements into print-ready designs while maintaining brand consistency</li>
       </ul>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Programs / Certifications -->
   <section class="section">
-    <h2 class="section-title">Projects & Programs</h2>
-    
-    <div class="exp-item">
-      <div class="exp-header">
-        <span class="exp-title">Item7 Food Truck Ordering System</span>
-        <span class="exp-date">Jan 2025 – Apr 2025</span>
-      </div>
-      <p class="project-tech">Python, Flask, PostgreSQL, SQLAlchemy, RESTful API, Vercel Serverless, Redis Caching | <a href="https://foodtruckk.vercel.app" target="_blank">Live Demo</a> | <a href="https://github.com/t4thick/project-foodtruck" target="_blank">GitHub</a></p>
-      <ul class="exp-bullets">
-        <li>Built full-stack web app with <span class="highlight">50+ menu items</span> and real-time cart using Flask, Python, and SQLAlchemy with MVC architecture</li>
-        <li>Implemented Stripe payments and role-based staff portal (<span class="highlight">4 roles</span>), enabling real-time order management and automated reporting</li>
-      </ul>
-    </div>
-
-    <div class="exp-item">
-      <div class="exp-header">
-        <span class="exp-title">DevCanvas — Personal Portfolio</span>
-        <span class="exp-date">Side Project</span>
-      </div>
-      <p class="project-tech">Next.js, TypeScript, Tailwind CSS, Framer Motion, Responsive Design | <a href="https://github.com/t4thick/Portfolio" target="_blank">GitHub</a></p>
-      <ul class="exp-bullets">
-        <li>Built modern responsive portfolio using Next.js and Tailwind with glassmorphism UI and hover animations</li>
-        <li>Optimized performance and SEO, demonstrating proficiency in modern frontend development practices</li>
-      </ul>
-    </div>
+    <h2 class="section-title">Programs / Certifications</h2>
 
     <div class="exp-item">
       <div class="exp-header">
         <span class="exp-title">Data Science Bootcamp</span>
         <span class="exp-date">May 2025 – Jun 2025</span>
       </div>
-      <p class="project-tech">IBM SkillsBuild | Virtual | IBM Scholar - Data Science Track</p>
+      <p class="exp-company">IBM SkillsBuild | Virtual | IBM Scholar - Data Science Track</p>
       <ul class="exp-bullets">
-        <li>Mastered data science workflows using Python, Jupyter Notebook, and Watson Studio, executing end-to-end data pipeline from exploration to visualization</li>
-        <li>Implemented data wrangling techniques and statistical analysis across multiple real-world datasets</li>
+        <li>Completed end-to-end data workflows in Python (exploration, cleaning, visualization) using Jupyter Notebook and Watson Studio</li>
+        <li>Applied data wrangling techniques and statistical analysis across multiple datasets to derive actionable insights</li>
       </ul>
     </div>
+
+    <p class="certs"><strong>Certifications:</strong> CodePath Web Development • IBM Getting Started with AI • IBM Getting Started with Cybersecurity • IBM Getting Started with Data • IBM Enterprise Design Thinking</p>
   </section>
 
   <!-- Organizations -->
@@ -415,7 +416,10 @@
     <p class="orgs">ColorStack • Advocacy for Climate Change Education • ISSUP • SECURE+ • African Student Association</p>
   </section>
 
-  <button class="download-btn no-print" onclick="window.print()" title="Click to print or save as PDF">📥 Download PDF</button>
+  <div class="no-print" style="position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 1000;">
+    <button class="download-btn" onclick="window.print()" title="Click to print or save as PDF">Download PDF</button>
+    <a href="/docs/resume-jakes-template.tex" download class="download-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">LaTeX (Jake's)</a>
+  </div>
 
 </body>
 </html>
